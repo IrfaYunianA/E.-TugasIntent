@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Aplikasi Movie"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/id_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Title" />
+            <EditText
+                android:id="@+id/id_db"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Directed by" />
+            <EditText
+                android:id="@+id/id_hp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Home Production" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3949AB"
+                android:text="Genre"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/id_cb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thriller" />
+                    <CheckBox
+                        android:id="@+id/id_cb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Comedy" />
+                    <CheckBox
+                        android:id="@+id/id_cb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Horror" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="199dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <CheckBox
+                        android:id="@+id/id_cb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Romance" />
+                    <CheckBox
+                        android:id="@+id/id_cb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Action" />
+                    <CheckBox
+                        android:id="@+id/id_cb6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fantasy" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3949AB"
+                android:text="Age Restriction"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/id_rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Under 13th" />
+            <RadioButton
+                android:id="@+id/id_rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13th until 18th" />
+            <RadioButton
+                android:id="@+id/id_rb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18th and above" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3949AB"
+                android:text="Country"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_country"/>
+            <EditText
+                android:id="@+id/id_dr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Date Release" />
+
+            <Button
+                android:id="@+id/id_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/bottom_bar"
+                android:textColor="#FFFFFF"
+                android:text="PROCESS"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
